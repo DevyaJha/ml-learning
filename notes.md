@@ -159,6 +159,25 @@ df["name"] = df["name"].fillna("Unknown")
 
 ---
 
+### Sample code
+
+```
+import pandas as pd
+data = {
+    "name": ["Kuhu", "Baby2", None],
+    "age": [5.5, None, 7],
+    "weight": [7.2, 7.5, 8.0]
+}
+
+df = pd.DataFrame(data)
+df["age"] = df["age"].fillna(0)
+df["age_next_month"] = df["age"] + 1
+df["name"] = df["name"].fillna("Unknown")
+
+print(df)
+df.to_csv("baby_data.csv", index=False)
+```
+
 ## 🧠 Key Learnings
 
 * Use **f-strings** for printing
