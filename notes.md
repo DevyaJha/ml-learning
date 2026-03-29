@@ -178,6 +178,10 @@ print(df)
 df.to_csv("baby_data.csv", index=False)
 ```
 
+Output - 
+<img width="385" height="92" alt="image" src="https://github.com/user-attachments/assets/f6268c76-f60a-467f-977a-377f0856fd43" />
+
+
 ## 🧠 Key Learnings
 
 * Use **f-strings** for printing
